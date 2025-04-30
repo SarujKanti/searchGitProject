@@ -19,21 +19,10 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
 
-//        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_splash)
 
-//        val txtAppName: TextView = findViewById(R.id.txt_appName)
-//        txtAppName.text = getString(R.string.app_title)
-
-
-        val image1 =  binding.image1
-        val image2 =  binding.image2
-        val image3 =  binding.image3
-        val image4 =  binding.image4
-        val image5 =  binding.image5
-
-        image1.setOnClickListener {
-            
-        }
+        val txtAppName: TextView = findViewById(R.id.txt_appName)
+        txtAppName.text = getString(R.string.app_title)
 
         val handler = android.os.Handler()
 
@@ -43,6 +32,6 @@ class SplashActivity : AppCompatActivity() {
             finish()
         }
 
-        handler.postDelayed(runnable, 20000)
+        handler.postDelayed(runnable, 2000)
     }
 }
